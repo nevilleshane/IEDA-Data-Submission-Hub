@@ -1,0 +1,210 @@
+#mapclient{
+	margin:0 1em 0.25em 0;
+	border:1px solid #017;
+	width:150px;
+	height:100px;
+	color:#001177;
+	position:relative;
+	text-align:center;
+	background:#fff url('/imgs/mapclient_activate.gif') bottom center no-repeat;
+	float:left;
+}
+#mapclient h5{
+	margin:1.5em auto 0 auto;
+	padding:0.5em;
+	border:1px solid #017;
+	background:#fff;
+	font:normal 1em Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	width:6em;
+	opacity:0.8;
+}
+#mapclient div.olControlMousePosition{
+	font-weight:bold;
+	padding:3px;
+	background:#fff;
+	border:1px solid #ccc;
+	opacity:0.5;
+}
+#mapclient:hover {
+	cursor:pointer;
+}
+#mapclient:hover h5 {
+	opacity:1;
+}
+#portal_content #mapclient {
+	width:300px;
+	height:185px;
+}
+#portal_content #mapclient h5 {
+	font-size: 2em;
+	width:7em;
+	opacity:0.8;
+}
+#mapclient a, #map a, .mapclass a {
+	padding: 0px !important;
+}
+.legendcontrol {
+	text-align: left;
+}
+.legendcontrol .maplegend {
+	background-color: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	padding: 3px;
+	min-width: 50px;
+	box-shadow: 0 0 1px 1px #DBDBDB;
+	position: relative;
+	z-index: 1;
+}
+.legendcontrol .tabbox{
+    padding: 5px 5px 20px 5px;
+height: 20px;
+display: block;
+}
+
+.legendcontrol .tabwrapper{
+    overflow:hidden;
+	z-index: 9999;
+	position: absolute;
+	height: 30px;
+	top: -30px;
+	left: 20px;
+	padding: 0px 1px;
+}
+
+.legendcontrol .tabboxlegend{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 1px 1px #dbdbdb;
+    -webkit-box-shadow: 0 0 1px 1px #DBDBDB;
+    box-shadow: 0 0 1px 1px #DBDBDB;
+    background: white;
+    border: 1px solid #CDCDCC;
+}
+
+.boundscontrol {
+	text-align: left;
+}
+.boundscontrol .boundsbox {
+	background-color: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	padding: 3px;
+	float:left;
+	min-height: 50px;
+	box-shadow: 0 0 1px 1px #DBDBDB;
+	position: relative;
+	z-index: 1;
+}
+.boundscontrol .tabbox {
+    width: 30px;
+height: 20px;
+display: block;
+padding: 5px;
+    margin: 10px;
+}
+
+.boundscontrol .tabwrapper{
+    overflow:hidden;
+    width:30px;
+    height:50px;
+	float:left;
+	z-index: 9999;
+	position: relative;
+}
+
+.boundscontrol .tabboxbounds{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 1px 1px #dbdbdb;
+    -webkit-box-shadow: 0 0 1px 1px #DBDBDB;
+    box-shadow: 0 0 1px 1px #DBDBDB;
+    background: white;
+    border: 1px solid #CDCDCC;
+}
+
+#layercontrol {
+	text-align: left;
+}
+#layercontrol #layers {
+	background-color: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	padding: 3px;
+	float:left;
+	min-height: 50px;
+	box-shadow: 0 0 1px 1px #DBDBDB;
+	position: relative;
+	z-index: 1;
+}
+#latlondiv {
+	font-size: 11px;
+	line-height: 13px;
+	background: -moz-linear-gradient(right center , rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.5) 50px) repeat scroll 0 0 transparent;
+	background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0.496094) 50px);
+	padding: 3px;
+	margin-bottom: 6px;
+	text-align: left;
+}
+#layercontrol .layerdiv,#layercontrol .ulayerdiv {
+	padding: 0px 3px;
+	margin: 2px;
+}
+
+.layercontainer {
+	background-color: #DDD;
+	padding:1px;
+	width: 120px;
+}
+
+#layercontrol .layerdivtitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	border-bottom: 2px solid #001177;
+	line-height: 1.1em;
+	padding-top: 2px;
+}
+
+#layercontrol .tabbox{
+    width: 30px;
+height: 20px;
+display: block;
+padding: 5px;
+    margin: 10px;
+}
+
+#layercontrol #tabwrapper{
+    overflow:hidden;
+    width:30px;
+    height:50px;
+	float:left;
+	z-index: 9999;
+	position: relative;
+}
+
+#layercontrol #tabbox4sides{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 1px 1px #dbdbdb;
+    -webkit-box-shadow: 0 0 1px 1px #DBDBDB;
+    box-shadow: 0 0 1px 1px #DBDBDB;
+    background: white;
+    border: 1px solid #CDCDCC;
+    margin-right:-15px;
+}
+
+#layercontrol #tabbox4sides .text{
+ margin-left:15px;   
+}
+
+#graticule,#gmrtmask {
+	float:right;
+	margin-top:1px;
+	margin-right:1px;
+	padding:1px;
+	cursor: pointer;
+}

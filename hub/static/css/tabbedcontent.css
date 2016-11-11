@@ -1,0 +1,380 @@
+.container .spanner {
+	text-align:left;
+	margin:10px
+}
+#modalflow #mapviewbutton {
+    display: none;
+}
+#content #mapviewbutton {
+	font: 100 1.5em Helvetica,Arial,sans-serif !important;
+	line-height: 1.6em;
+	text-align: center;
+	width: 150px;
+	padding:5px;
+	background-image:-moz-linear-gradient(top center , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+	border:2px solid #002288;
+	border-radius:5px;
+}
+#cruisereportbutton {
+	font: 100 1em Helvetica,Arial,sans-serif !important;
+}
+#mainbox {
+	float: left;
+}
+#maintitle {
+	font: 400 1.8em Helvetica,Arial,sans-serif !important;
+	line-height: 2em;
+	text-align: right;
+}
+.titlesubtext {
+	text-align: right;
+	font: 100 1.1em Helvetica,Arial,sans-serif;
+	color: #666;
+}
+div.triptych {
+	width: 33%;
+	float:left;
+	position:relative
+}
+div.diptych {
+	width: 49%;
+	float:left;
+	position:relative
+}
+div.row {
+	margin: 4px 0px;
+	display: table;
+	position: relative;
+	width: 100%
+}
+#content div.row, #modalflowcontent div.row {
+	overflow: hidden;
+}
+div.legend {
+	width: 38%;
+	font: 700 1.3em Helvetica,Arial,sans-serif;
+	display: table-cell;
+	text-align: right;
+	padding-right:2px;
+}
+div.lcontent {
+	display: table-cell;
+	text-align: left;
+	width: 58%;
+	padding-left: 2px;
+	/*border-left: 1px solid gray;*/
+}
+div.lcontent div.text {
+	font: 1.2em Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	line-height: 1.4em;
+}
+div.subtext {
+	font: 100 .9em Helvetica,Arial,sans-serif;
+	color: #666;
+}
+div.persondiv {
+	width:50%;
+	float:left;
+	text-align: right;
+}
+div.persondiv .personname {
+	font: 1.2em Helvetica,Arial,sans-serif;
+	font-weight: 600;
+}
+div.personinstitution {
+	font: 100 1.2em Helvetica,Arial,sans-serif;
+	text-align:left;
+	margin-left:2%;
+	width: 48%;
+	float: right;
+}
+.tabtitle {
+	font: 100 1.4em Helvetica,Arial,sans-serif !important;
+	text-align: right;
+	padding: 15px 5px;
+}
+.tabtitle.selected {
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+}
+.tabtitle:hover {
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.2));
+}
+a.image {
+	text-decoration: none !important;
+	border: none !important;
+	padding: 0px !important;
+}
+a.image:hover {
+	background-color: transparent !important;
+	border: none !important;
+	text-decoration: none !important;
+}
+#content {
+	position: relative;
+}
+.tabwrapper {
+	overflow: hidden;
+}
+#content #sidetabs {
+	width: 190px;
+	margin-left: 10px;
+	height: 500px;
+	float: left;
+}
+#modalflow #sidetabs {
+	width: 130px;
+	margin-left: 10px;
+	height: 500px;
+	float: left;
+}
+.tabwrapper hr {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+#content #sidetabcontent,#content #sidetabcontentfull {
+	width: 749px;
+	min-height: 498px;
+	border: 1px solid gray;
+	float: left;
+	position: relative;
+	overflow: auto;
+	background-color: #FEFEFF;
+}
+#content #sidetabcontent {
+	height: 498px;
+}
+#modalflow #sidetabcontent {
+	width: 733px;
+	min-height: 498px;
+	border: 1px solid gray;
+	float: left;
+	overflow: auto;
+	background-color: #FEFEFF;
+}
+#modalflow #expandcontract{
+    display:none;
+}
+#sidecontentloading {
+	position: absolute;
+	margin: -64px -64px;
+	top: 50%;
+	left: 50%;
+	width: 128px;
+	height: 128px;
+}
+.pagedivision {
+	clear: both;
+	height: 1em;
+}
+.pagedivisionflat {
+	clear: both;
+}
+#mapreport {
+	float:right;
+	width:166px;
+	text-align:right;
+}
+.stwindow
+{
+	margin: 5px;
+}
+.stwindow.hidden{
+	display: none;
+}
+.filerow {
+	padding: 5px;
+	overflow: hidden;
+}
+.filerow.clickable:hover {
+	cursor:pointer;
+}
+.filerow:hover {
+	background-image: -webkit-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+}
+.clickable.selected {
+	cursor:pointer;
+	background-image: -webkit-linear-gradient(left, rgba(0,22,88,0.2), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,22,88,0.2), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,22,88,0.2), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,22,88,0.2), rgba(0,0,0,0));
+}
+.filerow .left {
+	float: left;
+	width: 70%;
+	position: relative;
+}
+.filerow .right {
+	float: right;
+	width: 30%;
+	position: relative;
+	text-align: right;
+}
+.filerow .persondiv {
+	width: none;
+	float:left;
+	text-align: right;
+}
+.filerow .investigators {
+	float: right;
+}
+.filerow .personid {
+	margin: 4px 0px;
+	font-size: smaller;
+	overflow: hidden;
+}
+.filerow .platforminfo {
+	float: left;
+	clear: both;
+	margin-top: 8px;
+}
+.filerow .datasettitle {
+	font: 100 1.2em Helvetica,Arial,sans-serif;
+	float: left;
+	width: 100%;
+}
+.reference a {
+	text-decoration: none;
+	/*border: none !important;*/
+}
+.reference .search a {
+	border: none !important;
+}
+.filerow .row .legend {
+	font-size: 1.1em;
+}
+.diptych .legend {
+	margin-right: 2%;
+	width: 28%;
+}
+.diptych div.lcontent {
+	width: 68%;
+}
+.filerow .row .subtext, .filerow .row .text,
+.filerow .row .personname, .filerow .row .personinstitution {
+	font-size: small;
+}
+.filerow .right .row .lcontent {
+	/*text-align: right;*/
+}
+.stwindow hr {
+	clear: both;
+	margin: 0px 20px;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.lcontent .device {
+	font: 100 1em Helvetica,Arial,sans-serif !important;
+}
+.lcontent .deviceid {
+	font-style: italic;
+	font-weight: 200;
+	font-size: small;
+}
+.lcontent .platform {
+	font: 100 0.9em Helvetica,Arial,sans-serif !important;
+	color: #666666;
+}
+.cleardataset {
+	clear: both;
+}
+.dataset .references {
+	float: right;
+}
+div.listheader {
+	position:relative;
+}
+#res1 div.listheader {
+    padding-right:10px;
+    box-shadow: 0px 3px 5px #888888;
+    z-index: 3;
+}
+div.listheader .sortlistdiv {
+	position:absolute;
+	right:10px;
+	top:4px;
+}
+div.listcontent {
+	
+}
+.setstitle {
+	padding: 3px;
+	float: left;
+	background-image: -webkit-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,22,88,0.1), rgba(0,0,0,0));
+}
+#content .setstitle,#modalflowcontent .setstitle {
+   	font: 100 1.6em Helvetica,Arial,sans-serif !important; 
+	width: 700px;
+}
+#res1 .setstitle {
+    width: 100%;
+    font: 100 1.3em Helvetica,Arial,sans-serif !important;
+}
+.referencesinfo .reference {
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.referencesinfo .citation {
+	float:left;
+	width: 90%;
+}
+.referencesinfo .citation .authors {
+	font-weight: 400;
+}
+.referencesinfo .citation .journal {
+	font-style: italic;
+}
+.referencesinfo .search {
+	position:absolute;
+	right: .5em;
+	top: 50%;
+	text-align: right;
+	margin: -12px 0px;
+}
+.buttonwrapper,#authorization {
+	width: 78%;
+	margin-right: 1%;
+	float:right;
+	clear: both;
+	position: relative;
+}
+#authorization {
+	text-align:right;
+}
+.buttonwrapper .left {
+	position: absolute;
+	bottom: 3px;
+	left: 3px;
+}
+.buttonwrapper .right {
+	float: right;
+}
+.buttonwrapper button {
+	margin: 3px;
+	font-size: 1em;
+	font-weight: 700;
+}

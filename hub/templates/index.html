@@ -1,0 +1,134 @@
+{# This is a Jinja2 comment #}
+{% set active_page = "index" %}
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+{% if not session.id %}
+	<div class="login" >
+	<h2> Sign In </h2>
+	<h5>Please sign in to the Submission Hub using an existing Google or Orcid account. </h5>
+	<h6>If you don't have an account with either, please create an Orcid account using the Sign In button below.</h6>
+	<form style="text-align:center" action="{{ url_for('login_page.google_login') }}">
+
+	    <button class="loginBtn loginBtn--google">
+	      Sign in with Google
+	    </button>
+	    <button class="loginBtn loginBtn--orcid" formaction="{{ url_for('login_page.orcid_login') }}" >
+	      Sign in with <span style="color:gray; font-weight:bolder">ORC</span>iD
+	    </button>
+	    
+	</form>
+	</div>
+{% else %}
+
+	{% if session.ask_for_name %}
+	    <div class="login">
+			<form style="text-align:center" action="{{ url_for('login_page.add_name') }}" method="post">
+				<h4> IEDA Hub was unable to obtain your name from your sign-in account. <br><br>Please enter it here: </h4>
+				<br>
+				<label for="user_name">Name:</label>
+				<input type="text" id="user_name" name="user_name">
+				<br><br>
+				<input type="submit" value="Submit">  
+			</form>
+		</div>
+	{% else %}
+
+		<div id="portal_content">
+
+		    <form class="data_entry" action="{{ url_for('index_page.index') }}" method="post" enctype="multipart/form-data"
+		    	onsubmit="return validateForm()" name="new_dataset_form">
+			    <p class="data_entry">Submit a new dataset</h2>
+			     <div class="form-group">Submission name:</label>
+	          		<input type="text" class="form-control" id="dataset_name" name="dataset_name" value="{{dataset}}" required>
+	        	</div>
+
+				<div class="form-group">
+					<label for="data_type">Select data type:</label>
+					<select name="data_type" id="data_type">
+						{% for opt in data_types_list %}
+						    <option value={{opt}} {% if opt == data_type %} selected="selected" {% endif %}>{{opt}}</option>
+						{% endfor %}
+					</select>
+					<br><br>
+				</div>
+
+
+
+ 				<div class="form-group">
+  					<button type="button" id="file_btn" class="btn btn-sm btn-warning">Give us your file</button>
+ 					<span id="file_name"> 
+ 						{% if uploaded_file %} 
+ 							{{uploaded_file}}  
+ 						{% else %}
+	 						No file chosen
+	 					{% endif %}
+	 				</span>
+					<input type="file" name="data_file" id="data_file">
+					<p class="alert alert-danger" id="no_file_msg" hidden>Please choose a file to submit</p>
+				</div>
+			
+		    {% if confirm_datatype %}
+		    	<div>
+		    		<p class="alert alert-warning">We have examined your file and it looks like your data type is actually 
+		    		<strong> {{filetype}}</strong>.
+					<br><br>
+		    		  Please update the Data Type above, or confirm your choice.
+		    		</p>
+		    		<input type="hidden" id="confirmed" name="confirmed" value="{{uploaded_file}}">
+		    		<input type="hidden" id="filetype" name="filetype" value="{{filetype}}">
+		    	</div>
+		    {% endif %}
+
+			<p align="center"><button type="submit" class="btn btn-success btn-lg" name="submit" value="file_submit">
+				{% if confirm_datatype %}
+					Confirm
+				{% else %}
+					Submit
+				{% endif %}
+			</button></p>
+				
+		    </form>
+
+		    {% if status == "Uploaded" %}
+		    	<h3>Successfully uploaded file {{filename_success}} </h3>
+		    	<h4><a target="_blank" href={{ url_for('index_page.view_metadata', dataset=dataset_success)  }}>View metadata</a></h4>
+		    	
+		    {% endif %}
+		</div>
+	{% endif %}
+{% endif %}
+
+<script>
+	//js code to replace Choose File button
+	var input = document.getElementById('data_file');
+	var button = document.getElementById('file_btn');
+	var message = document.getElementById('file_name');
+
+	input.style.display = 'none';
+	button.style.display = 'inline-block';
+
+	input.addEventListener('change', function () {
+	    var filename = this.value.replace(/^.*[\\\\\\/]/, '');
+			message.innerHTML  = filename;
+	    message.style.display = 'inline-block';
+	});
+
+	button.addEventListener('click', function (e) {
+	    e.preventDefault();
+	    input.click();
+
+	});
+
+	function validateForm() {
+		var file_name = $("#file_name").text().replace(/\s+/g, '');
+		if (file_name == "Nofilechosen") {
+			$("#no_file_msg").show();
+			return false;
+		}
+	}
+</script>
+{%endblock body %}
+

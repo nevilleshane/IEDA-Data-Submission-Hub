@@ -1,0 +1,16 @@
+ul#menu li ul li a{
+	margin:0.1em 0;
+	padding:0.2em 0 0.4em 1.25em;
+	border-top:none;
+	border-bottom:none;
+}
+ul#menu li ul li a:hover, ul#menu li ul li a.cur{
+	border-top:none;
+	border-bottom:none;
+}
+ul#menu li ul, ul#menu li ul li{ width:13em; }
+
+/* menu left margin fix */
+div#menu-wrap { margin-left: 3px; }
+#mgds-header-banner { margin-left: 6px; }
+#mgds-header { margin-left: 6px; }

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="Neville Shane">
+
+	<title>IEDA: Data Submission Hub</title>
+
+	<link rel="shortcut icon" href="{{ url_for('static', filename='imgs/ieda-logo.png') }}" type="image/x-icon" />
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" media="all" />
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ieda_hub.css') }}" media="all">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+
+   <script>
+     var angle = 0;
+     setInterval(function(){
+      angle+=0.01;
+      $("#hubLogo").rotate(angle);
+     },10);
+   </script>
+
+</head>
+
+<body class="newtext">
+
+	<div id="wrapper">
+	<!-- hub-header start -->
+	<div id="mgds-header" style="margin-top:2px;height:69px;position:relative;">
+		<img src="{{ url_for('static', filename='imgs/hub_text.png') }}" id = "hubText" alt="IEDA Data Submission Hub Text" title="IEDA Data Submission Hub" height="66" style="position:relative;"/>
+		<a href="/"><img src="{{ url_for('static', filename='imgs/hub_logo.png') }}" id = "hubLogo" alt="IEDA Data Submission Hub Logo" title="IEDA Data Submission Hub" height="66" style="position:relative;"/></a>
+		<div style="position:absolute;bottom:10px;right:0px;">
+		<a href="http://www.iedadata.org"><img id="MGDS" style="margin-right:5px; position:relative;" alt="MGDS" src="{{ url_for('static', filename='imgs/IEDA_banner.png') }}" /></a>
+        <a href="http://www.nsf.gov"><img id="NSF" alt="NSF" title="National Science Foundation" src="{{ url_for('static', filename='imgs/nsf1.png') }}" /></a>
+		</div>
+    </div>
+    <!-- hub-header end -->
+
+    <div id="menu-wrap">
+         <ul id="menu">
+             <li><a class="cur" href="/"><img src="{{ url_for('static', filename='imgs/menu_home.gif') }}" alt="Home Icon"/> HOME</a></li>
+                <li><a href="/about">ABOUT</a>
+<!--                         <ul id="menu_about">
+                            <li><a href="/about/overview.php">MGDS Overview</a></li>
+                            <li><a href="/about/news.php">News</a></li>
+                            <li><a href="/help/index.php">Help &amp; Tutorials</a></li>
+                            <li><a href="/education/modules.php">Education Modules</a></li>
+                            <li><a href="/about/citations.php">System Citations</a></li>
+                            <li><a href="/about/statistics_holdings.php">Statistics &amp; Holdings</a></li>
+                            <li><a href="/about/related_links.php">Related Links</a></li>
+                            <li><a href="/about/contact.php">Contact Us</a></li>
+                            <li><a href="/about/terms_of_use.php">Terms of Use</a></li>
+                        </ul> -->
+                </li>
+                <li><a href="/contribute">CONTRIBUTE DATA</a>
+<!--                         <ul id="menu_repo">
+                            <li><a href="/library">Description</a></li>
+                            <li><a href="/tools/search">Search for Data</a></li>
+                            <li><a href="http://app.iedadata.org/databrowser">IEDA Data Browser</a></li>
+                            <li><a href="/submit">Contribute Data</a></li>
+                            <li><a href="/tools/web_services.php#mgdl">Web Services</a></li> 
+                        </ul> -->
+                </li>
+                <li><a href="/resources">RESOURCES</a></li>
+                <li><a href="/access">ACCESS DATA</a></li>
+                <li><a href="/help">HELP</a></li>
+                <li><a href="/contact">CONTACT US</a></li>
+</ul>
+        <a href="" id="menu_search_link"><span id="menu_search_button" style="background: -moz-linear-gradient(center top , rgb(187, 187, 187), rgb(68, 68, 68)) repeat scroll 0px 0px transparent; border-radius: 7px 7px 7px 7px; padding: 2px 6px; color: rgb(255, 255, 255);">Search for Data</span></a>
+</div>
+
+<!-- 	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">IEDA Data Submission Hub</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div> --><!--/.nav-collapse -->
+<!--		</div>
+	</nav> -->
+
+
+<div id="content">
+
+	<h2>IEDA Data Submission Hub</h2>
+	<div id="portal_menu">
+		<h3>EarthChemDB</h3>
+		<p><a href="">EarthChemDB Home</a></p>
+		<p><a href="">Search for data</a></p>
+	    <p><a href="">Submit data</a></p>
+		<p><a href="">Data Templates</a></p>
+				
+		<h3>Submit data</h3>
+		<p><a href="">Instructions</a></p>
+		<p><a href="">My Datasets</a></p>
+	    <p><a href="">New Dataset</a></p>
+		<p><a href="">My Procedures</a></p>
+		<p><a href="">My Templates</a></p>
+		{% if session.id %}
+			<p><a href="{{ url_for('login_page.logout') }}">Sign Out</a></p>
+		{% endif %}
+	</div><!-- portal_menu end -->
+
+<!-- Display login details -->
+<header>
+	{% if session.id and session.user_name %}
+		<button style="float:right;"><a href="{{ url_for('login_page.logout') }}">Sign Out</a></button>
+	    <h4>Welcome {{session.user_name}}</h4>
+	    <p><a href="{{ url_for('index_page.view_user_metadata') }}" target="_blank"> ID: {{session.id}}</a></p>
+	{% endif %}
+</header>
+
+<div>
+	{% block body %}{%endblock body %}
+</div>
+</div></div>
+</body>
+</html>

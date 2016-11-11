@@ -1,0 +1,114 @@
+#response, #form_content {
+    width: 770px;
+	margin: auto
+}
+.divrow2 {
+	padding: 5px 0px;
+}
+.clearspace{
+	clear:both;
+}
+.box {
+    margin: 2px;
+}
+.label {
+	float: left;
+	font-weight: bold;
+	margin-left: 5px;
+	width: 158px;
+	height: 1em;
+    line-height: 1em;
+}
+.input {
+	float: left;
+	width: 505px;
+	background-color: #EEEEEE;
+	padding:3px
+}
+#form_content {
+    min-height: 500px;
+}
+select {
+    min-width: 100px;
+}
+label {
+        text-align: right;
+        font-weight: bold;
+        margin-right: 8px;
+        width: 150px;
+}
+.setdiv {
+	background-color: #DDDDDD;
+	border: 1px solid gray;
+	display: block;
+	float: left;
+	font-size: 8pt;
+	margin: 2px;
+	padding: 0 4px;
+}
+.setdiv a {
+	cursor: pointer;
+}
+.comment, .grey {
+    display:block;
+	font-style: italic;
+    color: gray;
+    font-size: smaller;
+}
+.req {
+    color: red;
+    font-style: italic;
+	font-weight: normal;
+	font-size: smaller;
+}
+#ERROR {
+    color: red;
+    font-weight: bold;
+}
+#wrapper {
+/*    margin-left:auto;
+    margin-right:auto;*/
+    padding-left: 0px;
+}
+
+#recaptcha_div, #recaptcha_response {
+    position:relative;
+    float:left;
+}
+
+.divrow {
+    float:left;
+    width: 668px;
+    margin: 8px 0px;
+}
+
+.tooltip {
+    background-color:#000;
+    border:1px solid #fff;
+    padding:10px 15px;
+    width:250px;
+    display:none;
+    color:#fff;
+    text-align:left;
+    font-size:12px;
+
+    /* outline radius for mozilla/firefox only */
+    -moz-box-shadow:0 0 10px #000;
+    -webkit-box-shadow:0 0 10px #000;
+}
+#tip {
+	font-size: smaller;
+	vertical-align: 2pt;
+	padding-left: 5px;
+}
+.even {
+	background-color: #DDDDDD;
+}
+.odd {
+	background-color: #FFFFFF;
+}
+#data_sets table {
+	margin: auto;
+	font-size: 0.8em;
+	width: 480px;
+}

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    font: 100% Arial,Helvetica;
+}
+
+img {
+    border: 0 none;
+}
+
+li {
+    margin-left: 30px;
+}
+
+h1 {
+    font: 2.3em Georgia,"Times New Roman";
+}
+
+h1, h2, h3, h4, h1 a:link, h2 a:link, h3 a:link, h4 a:link {
+    color: #024A61;
+}
+
+p {
+    margin: 15px 0;
+}
+
+a img {
+    border: 0 none;
+}
+
+a:link, a:visited {
+    color: #024A61;
+    text-decoration: none;
+}
+
+.clearfloat {
+    display: block;
+}
+.clearfloat:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.no-featured {
+    width: 920px;
+}
+
+.no-sidebars {
+    width: 920px;
+}
+
+.node {
+    /*border-bottom: 1px dotted #CCCCCC;*/
+    margin-bottom: 20px;
+}
+
+.node .content {
+    margin-top: 10px;
+}
+
+.rtecenter {
+    text-align: center;
+}
+
+.menu li.expanded, .menu li.collapsed, .menu li.leaf {
+    list-style-image: none;
+}
+
+span.inline-right {
+    display: block;
+    float: right;
+    margin: 0 5px;
+}
+
+span.inline-center {
+    display: block;
+    text-align: center;
+}
+
+ul.menu {
+    border: medium none;
+    list-style: none outside none;
+    text-align: left;
+}
+
+ul.menu li {
+    margin: 0 0 0 0.5em;
+}
+
+li.leaf {
+    list-style-image: url("../../misc/menu-leaf.png");
+    list-style-type: square;
+    margin: 0;
+    padding: 0.2em 0.5em 0 0;
+}
+
+li.expanded {
+    list-style-image: url("../../misc/menu-expanded.png");
+    list-style-type: circle;
+    margin: 0;
+    padding: 0.2em 0.5em 0 0;
+}
+
+#head {
+    font-size: 0.7em;
+    margin: 10px auto 0;
+    padding: 0;
+    width: 960px;
+}
+
+#logo {
+    float: left;
+    width: 350px;
+}
+
+#banner-region {
+    float: right;
+}
+
+#navbar {
+    background: url("http://www.iedadata.org/sites/all/themes/arthemia/images/navbar.png") no-repeat scroll 0 0 #2C2C2C;
+    margin: 10px auto 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+#page {
+    background: none repeat scroll 0 0 #ECECEC;
+    font-size: 0.7em;
+    margin: 0 auto;
+    padding: 10px;
+    width: 940px;
+}
+
+#top {
+    padding: 0;
+}
+
+#content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-size: 1.05em;
+    line-height: 1.75em;
+    min-height: 400px;
+    padding: 10px;
+}
+
+#headline {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-size: 1.05em;
+    line-height: 1.5em;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+#footer-region {
+    background: url("http://www.iedadata.org/sites/all/themes/arthemia/images/bottombar.png") no-repeat scroll center bottom #2C2C2C;
+    color: #CCCCCC;
+    font-size: 0.7em;
+    margin: 0 auto;
+    padding: 10px;
+    width: 940px;
+}
+
+#triptych-first {
+    float: left;
+    padding: 1px;
+    width: 180px;
+}
+
+#triptych-second {
+    float: left;
+    margin-left: 45px;
+    padding: 1px;
+    width: 480px;
+}
+
+#triptych-third {
+    float: right;
+    padding: 1px;
+    width: 180px;
+}
+
+#footer-message {
+    font-size: 0.6em;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 960px;
+}
+
+#menu-bar ul {
+    list-style: none outside none;
+    z-index: 10;
+}
+
+#menu-bar li {
+	border-right: 1px solid #333333;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+}
+
+#menu-bar li ul {
+    display: none;
+    position: absolute;
+    width: 10em;
+}
+
+#menu-bar li li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    width: 122px;
+}
+
+#menu-bar li li a, #menu-bar li li a:link, #menu-bar li li a:visited {
+    background: none repeat scroll 0 0 #2B2B2B;
+    border-top: 1px solid #C0C0C0;
+    float: none;
+    margin: 0;
+    padding: 5px 10px 5px 18px;
+    width: 122px;
+}
+
+#menu-bar li:hover, #menu-bar li a:hover {
+    background: none repeat scroll 0 0 #024A61;
+}
+
+#menu-bar a, #menu-bar a:visited {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+#menu-bar a:hover {
+    display: block;
+    text-decoration: none;
+}
+
+#menu-bar li:hover ul {
+    display: block;
+}
+
+#menu-bar li li a:hover, #menu-bar li li a:active {
+    background: none repeat scroll 0 0 #666666;
+    padding: 5px 10px 5px 18px;
+}
+
+#content h1, #content h2, #content h3, #content h4 {
+    text-shadow: 1px 1px 2px #BBBBBB;
+}
+
+#content .content {
+    font-family: Verdana,"DejaVu Sans",Sans;
+}
+
+#content .content p {
+    margin-top: 0;
+}
+
+#content .content ul, #content .content ol {
+    margin-bottom: 15px;
+}
+
+#content .content li {
+    line-height: 1.7em;
+    list-style: square outside none;
+}
+
+#footer-region a {
+    color: #FFFFFF;
+}
